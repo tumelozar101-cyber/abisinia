@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Abisinia — Home & Apparel. Premium mirrors, wall art, furniture pieces, and women’s fashion." />
+  <title>abisinia. | home & apparel</title>
+
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      <div class="topbar__left">
+        <span class="pill">Premium</span>
+        <span class="muted">Mirrors • Wall Art • Furniture • Women’s Fashion</span>
+      </div>
+      <a class="topbar__link" href="#contact">Get a quote</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="wrap header__inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <div class="brand__logoWrap" aria-hidden="true">
+          <img src="images/logo.png" alt="" class="brand__logo"
+               onerror="this.style.display='none'; this.parentElement.classList.add('brand__fallback');">
+          <span class="brand__fallbackText">a.</span>
+        </div>
+        <div class="brand__text">
+          <div class="brand__name">abisinia<span class="dot">.</span></div>
+          <div class="brand__tag">home & apparel</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#collections">Collections</a>
+        <a href="#featured">Featured</a>
+        <a href="#shop">Shop</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="iconBtn" id="openDrawerBtn" aria-label="Open saved items">
+          <span class="icon">🖤</span>
+          <span class="badge" id="bagCount">0</span>
+        </button>
+
+        <button class="menuBtn" id="menuBtn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" aria-hidden="true">
+      <a href="#collections" class="mobileNav__link">Collections</a>
+      <a href="#featured" class="mobileNav__link">Featured</a>
+      <a href="#shop" class="mobileNav__link">Shop</a>
+      <a href="#reviews" class="mobileNav__link">Reviews</a>
+      <a href="#contact" class="mobileNav__link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="wrap hero__inner">
+        <div class="hero__copy reveal">
+          <div class="kicker">
+            <span class="kicker__line"></span>
+            <span>Luxury pieces that elevate your space</span>
+          </div>
+
+          <h1>Statement mirrors.<br><span class="accent">Bold décor.</span> Clean style.</h1>
+          <p class="lead">
+            Abisinia brings premium home décor (mirrors, wall art, furniture pieces, curtains & mats) plus women’s fashion.
+            Browse, save items, then request a quote on WhatsApp in seconds.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#shop">Shop now</a>
+            <button class="btn btn--ghost" id="heroWhatsAppBtn" type="button">Get a quote on WhatsApp</button>
+          </div>
+
+          <div class="trust">
+            <div class="trust__item">
+              <span class="trust__icon">✨</span>
+              <div>
+                <strong>Premium look</strong>
+                <div class="muted">Designed to feel expensive</div>
+              </div>
+            </div>
+            <div class="trust__item">
+              <span class="trust__icon">📦</span>
+              <div>
+                <strong>Delivery support</strong>
+                <div class="muted">We confirm cost + timelines</div>
+              </div>
+            </div>
+            <div class="trust__item">
+              <span class="trust__icon">💬</span>
+              <div>
+                <strong>Fast WhatsApp replies</strong>
+                <div class="muted">Stock confirmed before payment</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick cards -->
+        <div class="hero__cards reveal">
+          <article class="miniCard" data-scrollto="#shop" data-filter="mirrors" role="button" tabindex="0">
+            <div class="miniCard__top">
+              <span class="chip">Mirrors</span>
+              <span class="miniCard__arrow">→</span>
+            </div>
+            <h3>Crystal, chrome & statement</h3>
+            <p class="muted">Perfect for lounges, bedrooms, entrances.</p>
+          </article>
+
+          <article class="miniCard" data-scrollto="#shop" data-filter="decor" role="button" tabindex="0">
+            <div class="miniCard__top">
+              <span class="chip">Wall Art</span>
+              <span class="miniCard__arrow">→</span>
+            </div>
+            <h3>Bold pieces that pop</h3>
+            <p class="muted">Add character and warmth instantly.</p>
+          </article>
+
+          <article class="miniCard miniCard--highlight" data-scrollto="#contact" role="button" tabindex="0">
+            <div class="miniCard__top">
+              <span class="chip chip--hot">Quick Quote</span>
+              <span class="miniCard__arrow">→</span>
+            </div>
+            <h3>Send a screenshot</h3>
+            <p class="muted">We reply with price + delivery options.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections -->
+    <section class="section" id="collections">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <div>
+            <h2>Collections</h2>
+            <p class="muted">Pick a category — then save items you like.</p>
+          </div>
+        </div>
+
+        <div class="grid collections">
+          <a class="collectionCard reveal" href="#shop" data-filterlink="mirrors">
+            <div class="collectionCard__top">
+              <span class="pill pill--dark">Top seller</span>
+              <span class="arrow">→</span>
+            </div>
+            <h3>Mirrors</h3>
+            <p class="muted">Crystal, chrome, geometric & large wall pieces.</p>
+          </a>
+
+          <a class="collectionCard reveal" href="#shop" data-filterlink="decor">
+            <div class="collectionCard__top">
+              <span class="pill">Hot</span>
+              <span class="arrow">→</span>
+            </div>
+            <h3>Wall Art</h3>
+            <p class="muted">Bold prints and framed pieces.</p>
+          </a>
+
+          <a class="collectionCard reveal" href="#shop" data-filterlink="furniture">
+            <div class="collectionCard__top">
+              <span class="pill">Premium</span>
+              <span class="arrow">→</span>
+            </div>
+            <h3>Furniture</h3>
+            <p class="muted">Headboards, sofas & statement items.</p>
+          </a>
+
+          <a class="collectionCard reveal" href="#shop" data-filterlink="apparel">
+            <div class="collectionCard__top">
+              <span class="pill pill--dark">New</span>
+              <span class="arrow">→</span>
+            </div>
+            <h3>Women’s Fashion</h3>
+            <p class="muted">Dresses, sets, tops and more (add photos).</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Carousel -->
+    <section class="section section--soft" id="featured">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <div>
+            <h2>Featured pieces</h2>
+            <p class="muted">These are your “closers” — high impact, high desire.</p>
+          </div>
+          <div class="carouselBtns">
+            <button class="iconBtn" id="prevNew" aria-label="Previous">←</button>
+            <button class="iconBtn" id="nextNew" aria-label="Next">→</button>
+          </div>
+        </div>
+
+        <div class="carousel" id="newCarousel" aria-label="Featured carousel"></div>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="section" id="shop">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <div>
+            <h2>Shop</h2>
+            <p class="muted">Tap any product for quick view. Save items (🖤) and send all on WhatsApp.</p>
+          </div>
+
+          <div class="filters" role="tablist" aria-label="Product filters">
+            <button class="filterBtn is-active" data-filter="all" role="tab">All</button>
+            <button class="filterBtn" data-filter="mirrors" role="tab">Mirrors</button>
+            <button class="filterBtn" data-filter="decor" role="tab">Wall Art</button>
+            <button class="filterBtn" data-filter="furniture" role="tab">Furniture</button>
+            <button class="filterBtn" data-filter="apparel" role="tab">Women’s Fashion</button>
+          </div>
+        </div>
+
+        <div class="grid products" id="productGrid" aria-live="polite"></div>
+
+        <div class="note reveal">
+          <strong>Pro:</strong> Most of these items sell better with “Request quote” instead of fixed pricing (sizes vary).
+          The WhatsApp button auto-fills item name + your customer’s delivery area.
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section section--soft" id="reviews">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <div>
+            <h2>Customer love</h2>
+            <p class="muted">Replace these with real reviews or screenshots later.</p>
+          </div>
+        </div>
+
+        <div class="grid reviews">
+          <figure class="reviewCard reveal">
+            <blockquote>“The mirror made my lounge look 10x more expensive. Delivery was smooth.”</blockquote>
+            <figcaption>— Customer</figcaption>
+          </figure>
+          <figure class="reviewCard reveal">
+            <blockquote>“Great quality and fast response on WhatsApp. I got exactly what I wanted.”</blockquote>
+            <figcaption>— Customer</figcaption>
+          </figure>
+          <figure class="reviewCard reveal">
+            <blockquote>“Wall art is bold and clean. Perfect finishing touch.”</blockquote>
+            <figcaption>— Customer</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact reveal">
+          <div class="contact__left">
+            <h2>Get a quote in 30 seconds</h2>
+            <p class="muted">
+              Send the item name (or screenshot), your location, and any size/dimensions.
+              We’ll confirm price + delivery options.
+            </p>
+
+            <div class="contact__cards">
+              <div class="infoCard">
+                <div class="infoCard__icon">📱</div>
+                <div>
+                  <div class="infoCard__label">WhatsApp</div>
+                  <div class="infoCard__value" id="waNumberText">+27 XX XXX XXXX</div>
+                </div>
+              </div>
+
+              <div class="infoCard">
+                <div class="infoCard__icon">📍</div>
+                <div>
+                  <div class="infoCard__label">Store / Pickup</div>
+                  <div class="infoCard__value">Add address here</div>
+                </div>
+              </div>
+
+              <div class="infoCard">
+                <div class="infoCard__icon">⏱️</div>
+                <div>
+                  <div class="infoCard__label">Response time</div>
+                  <div class="infoCard__value">Usually under 15–30 min</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__actions">
+              <button class="btn btn--primary" id="contactWhatsAppBtn" type="button">Message on WhatsApp</button>
+              <a class="btn btn--ghost" href="#shop">Browse products</a>
+            </div>
+          </div>
+
+          <form class="contact__right" id="quickOrderForm">
+            <h3>Quick quote form</h3>
+            <p class="muted">This sends directly to WhatsApp (no email).</p>
+
+            <label>
+              Your name
+              <input type="text" name="name" placeholder="e.g., Lerato" required />
+            </label>
+
+            <label>
+              What are you interested in?
+              <select name="interest" required>
+                <option value="" selected disabled>Select one</option>
+                <option value="Mirrors">Mirrors</option>
+                <option value="Wall Art">Wall Art</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Curtains / Mats">Curtains / Mats</option>
+                <option value="Women’s Fashion">Women’s Fashion</option>
+              </select>
+            </label>
+
+            <label>
+              Size / Dimensions (if applicable)
+              <input type="text" name="size" placeholder="e.g., 120cm x 80cm / M / window width" />
+            </label>
+
+            <label>
+              Delivery area
+              <input type="text" name="area" placeholder="e.g., Welkom / Johannesburg" required />
+            </label>
+
+            <label>
+              Extra notes
+              <textarea name="notes" rows="4" placeholder="Color preference, quantity, or 'I will send a screenshot'"></textarea>
+            </label>
+
+            <button class="btn btn--primary btn--full" type="submit">Send on WhatsApp</button>
+            <p class="tiny muted">You’ll get a price + delivery confirmation via WhatsApp.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <div class="footer__brand">abisinia<span class="dot">.</span> <span class="muted">home & apparel</span></div>
+        <div class="muted">Premium décor and women’s fashion.</div>
+      </div>
+      <div class="footer__links">
+        <a href="#collections">Collections</a>
+        <a href="#featured">Featured</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="muted">© <span id="year"></span> Abisinia. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <button class="waFloat" id="waFloat" aria-label="WhatsApp quote">
+    <span class="waFloat__icon">💬</span>
+    <span class="waFloat__text">Quote</span>
+  </button>
+
+  <!-- Drawer -->
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__overlay" id="drawerOverlay"></div>
+    <div class="drawer__panel" role="dialog" aria-label="Saved items">
+      <div class="drawer__head">
+        <h3>Saved items</h3>
+        <button class="iconBtn" id="closeDrawerBtn" aria-label="Close">✕</button>
+      </div>
+      <div class="drawer__body" id="drawerBody">
+        <p class="muted">No saved items yet. Tap the 🖤 on a product.</p>
+      </div>
+      <div class="drawer__foot">
+        <button class="btn btn--primary btn--full" id="drawerWhatsAppBtn" type="button">Send saved items on WhatsApp</button>
+        <p class="tiny muted">We’ll confirm price + delivery after your message.</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__panel" role="dialog" aria-label="Product details">
+      <button class="iconBtn modal__close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
